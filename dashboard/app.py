@@ -8,3 +8,16 @@ model = joblib.load(
 )
 
 st.success("Model Loaded Successfully")
+
+tenure = st.slider(
+    "Tenure Months",
+    0,
+    72,
+    12
+)
+
+monthly_charge = st.number_input(
+    "Monthly Charge",
+    min_value=0.0,
+    value=50.0
+)
