@@ -21,3 +21,7 @@ monthly_charge = st.number_input(
     min_value=0.0,
     value=50.0
 )
+
+
+if st.button("Predict"):
+    st.write("Prediction system ready")
